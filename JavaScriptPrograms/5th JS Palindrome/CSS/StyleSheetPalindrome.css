@@ -1,0 +1,114 @@
+﻿
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #33994d;
+    --secondary-color: #b3d98c;
+    --text-color: linen;
+    --shadow-color: #331a00;
+}
+
+main {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+    main * {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-items: center;
+        font-family: Monospace, sans-serif;
+    }
+
+.float-box {
+    top: 20%;
+    background-color: var(--secondary-color);
+    width: 500px;
+    height: 350px;
+    justify-items: center;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 15px 10px 0 var(--shadow-color);
+}
+
+legend {
+    display: flex;
+    position: absolute;
+    top: 75px;
+    left: 100px;
+    color: var(--shadow-color);
+    font-size: 30;
+    font-weight: 1000;
+    text-shadow: 1px 2px 1px var(--text-color);
+}
+
+h2 {
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    color: var(--shadow-color);
+    text-shadow: 1px 2px 1px var(--text-color);
+}
+
+#text-input {
+    display: flex;
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    left: 100px;
+    padding: 10px;
+}
+
+#check-btn {
+    display: flex;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 200px;
+    left: 200px;
+    color: var(--shadow-color);
+    border-color: var(--secondary-color);
+    background-color: var(--text-color);
+    font-weight: bold;
+    padding: 0 0 0 5.9%;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+    #check-btn:hover {
+        cursor: pointer;
+        color: var(--text-color);
+        background-color: var(--shadow-color);
+        font-weight: bold;
+    }
+
+#result {
+    display: flex;
+    position: relative;
+    font-weight: 900;
+    height: 100px;
+    width: 300px;
+    top: 80px;
+    left: 100px;
+    color: var(--shadow-color);
+    text-shadow: 1px 2px 1px var(--text-color);
+}
+
+#result-label {
+    display: flex;
+    position: relative;
+    height: 100px;
+    width: 300px;
+    top: 80px;
+    left: 110px;
+    color: var(--shadow-color);
+    text-shadow: 1px 2px 1px var(--text-color);
+}
