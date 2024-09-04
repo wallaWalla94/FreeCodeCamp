@@ -1,0 +1,147 @@
+﻿:root {
+    --navBar-color: #ff0000;
+    --navBarFont-color: white;
+    --mainBackground-: linen;
+}
+
+*, :before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baskervville', serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+    row-gap: 3rem;
+    background-color: var(--mainBackground-);
+}
+
+/* Navigational Bar*/
+
+.heading {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header {
+    grid-column: 1 / -1;
+    position: relative;
+}
+
+.nav-bar {
+    display: flex;
+    position: absolute;
+    background-color: var(--navBar-color);
+    height: 3.5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+    .nav-bar div {
+        display: grid;
+        grid-auto-flow: column;
+        position: relative;
+        float: left;
+        width: 33%;
+        height: 100%;
+    }
+
+.header-img img {
+    display: grid;
+    position: relative;
+    height: 100%;
+    grid-auto-flow: column;
+    grid-auto-columns: 30rem;
+    align-items: center;
+}
+
+.header-img > img {
+    display: flex;
+    position: relative;
+    height: 10%;
+    top: 2.7vh;
+    left: 1rem;
+}
+
+.nav-bar-menu {
+    left: 7rem;
+    display: grid;
+    position: relative;
+    height: 100%;
+    grid-auto-flow: column;
+    grid-auto-columns: 6rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: var(--navBarFont-color);
+    align-items: center;
+}
+
+    .nav-bar-menu li {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+.nav-bar ul {
+    list-style-type: none;
+}
+
+.nav-bar-menu li:hover {
+    color: #A8611A;
+    background-color: white;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+/*Icons of Nav-Bar*/
+.social-icons {
+    left: 7rem;
+    display: grid;
+    position: relative;
+    font-size: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 2.5rem;
+    align-items: center;
+    justify-content: right;
+}
+
+    .social-icons a {
+        text-decoration: none;
+        color: white;
+    }
+/*Title*/
+.title-landing {
+    display: grid;
+    top: 1rem;
+    grid-column: 1 / -1;
+    position: relative;
+}
+
+.nameOfPage {
+    display: grid;
+    grid-column: 1 / -1;
+    position: relative;
+    color: black;
+}
+
+.email-ver {
+    display: grid;
+    grid-column: 1 / -1;
+}
+
+    .email-ver h2 {
+        font-family: "Raleway", sans-serif;
+    }
+/*Video settings*/
+.video-mp4 {
+    display: grid;
+    position: absolute;
+    top: 400px;
+}

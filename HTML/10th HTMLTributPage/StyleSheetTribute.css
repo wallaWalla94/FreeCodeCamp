@@ -1,0 +1,19 @@
+﻿
+#image {
+    width: max(45%,45%);
+    max-width: 100%;
+    max-height: 100%%;
+    background-color: #D4AF37;
+    aspect-ratio: auto;
+    padding: 0.2rem;
+    margin: auto;
+    display: block;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

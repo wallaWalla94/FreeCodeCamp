@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device,initial-scale=1.0" />
+    <link rel="stylesheet" href="StyleSheetPortfolio.css" />
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <main>
+        <section class="salute" id="welcome-section">
+            <nav class="nav-bar" id="navbar">
+                <img class="header-img" id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" />
+                <ul>
+                    <li class="nav"><a href="#">About</a></li>
+                    <li class="nav"><a href="#">Work</a></li>
+                    <li class="nav"><a href="#" id="profile-link" target="_blank">Contact</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/freecodecamp/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/freecodecamp/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/freecodecamp">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/school/free-code-camp/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.youtube.com/freecodecamp">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="myName">
+                <h1>
+                    Hello World! This is <span class="yo">Carlos Loya</span> and
+                    my portfolio <span class="profesion"><i>future Software Engineer.</i></span>
+                </h1>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2 class="title-2"> My projects.</h2>
+            <section class="grid-projects">
+                <div class="window-project project-tile">
+                    <div class="wheel">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+
+                        <div class="cabin"></div>
+                        <div class="cabin"></div>
+                        <div class="cabin"></div>
+                        <div class="cabin"></div>
+                        <div class="cabin"></div>
+                        <div class="cabin"></div>
+                    </div>
+                    <div class="name-project">Ferris Wheel</div>
+                </div>
+                <div class="window-project">
+                    <div class="penguin-sky">
+                        <div class="name-project">Penguin</div>
+                        <div class="left-mountain"></div>
+                        <div class="back-mountain"></div>
+                        <div class="sun"></div>
+                        <div class="penguin">
+                            <div class="penguin-head">
+                                <div class="face left"></div>
+                                <div class="face right"></div>
+                                <div class="chin"></div>
+                                <div class="eye left">
+                                    <div class="eye-lid"></div>
+                                </div>
+                                <div class="eye right">
+                                    <div class="eye-lid"></div>
+                                </div>
+                                <div class="blush left"></div>
+                                <div class="blush right"></div>
+                                <div class="beak top"></div>
+                                <div class="beak bottom"></div>
+                            </div>
+                            <div class="shirt">
+                                <div>💜</div>
+                                <p>I CSS</p>
+                            </div>
+                            <div class="penguin-body">
+                                <div class="arm left"></div>
+                                <div class="arm right"></div>
+                                <div class="foot left"></div>
+                                <div class="foot right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ground"></div>
+                </div>
+                <div class="window-project">
+                    <section class="survey-form">
+                        <h1 id="title">Survey Form</h1>
+                        <p id="description">This is a test survey made by Carlos Loya</p>
+                        <fieldset>
+                            <form id="survey-form">
+                                <label for="name-label" id="name-label"><p>Name: </p><input id="name" name="survey-form" type="text" required placeholder="Please input your name" /></label>
+                                <label for="email-label" id="email-label"><p>Email: </p><input id="email" name="survey-form" type="email" required placeholder="example@domain.com" /></label>
+                                <label for="number-label" id="number-label"><p>Age: </p><input id="number" name="survey-form" type="number" pattern="[0-9]" min="0" max="120" placeholder="max 120" /></label>
+                                <label for="dropdown">
+                                    <p>What Country from North America are you from?</p>
+                                    <select id="dropdown" name="survey-form">
+                                        <option value="">(select one)</option>
+                                        <option value="1">Canada</option>
+                                        <option value="2">United States</option>
+                                        <option value="3">Mexico</option>
+                                    </select>
+                                </label>
+                                <p>Have you travelled in the last 3 months?</p>
+                                <label for="yes-button">Yes<input type="radio" name="travel-button" class="inline" value="yes" checked /></label>
+                                <label for="no-button">No<input type="radio" name="travel-button" class="inline" value="no" /></label>
+                                <p>What countries of North America have you travelled or lived in?(Select all aplicable)</p>
+                                <label for="Canada">Canada <input class="inline" id="Canada" type="checkbox" required name="survey-form" value="Canada" checked /> </label>
+                                <label for="USA">United States <input class="inline" id="USA" type="checkbox" required name="survey-form" value="USA" /> </label>
+                                <label for="Mexico">Mexico <input class="inline" id="Mexico" type="checkbox" required name="survey-form" value="Mexico" /> </label>
+                                <label for="comments">
+                                    <p>Comments:</p>
+                                    <textarea id="comments" name="comments" rows="8" cols="50" placeholder="Feel free to provide constructive criticism or any kind of comments..."></textarea>
+                                </label>
+                                <input type="submit" value="Submit" id="submit" name="survey-form" />
+
+                            </form>
+                        </fieldset>
+                    </section>
+                </div>
+                <div class="window-project">
+                    <div class="nutrition-title">Nutrion Facts Label</div>
+                    <section class="nutrition-label-window">
+
+                        <div class="label">
+                            <header>
+                                <h1 class="bold">Nutrition Facts</h1>
+                                <div class="divider"></div>
+                                <p>8 servings per container</p>
+                                <p class="bold">Serving size <span>2/3 cup (55g)</span></p>
+                            </header>
+                            <div class="divider large"></div>
+                            <div class="calories-info">
+                                <div class="left-container">
+                                    <h2 class="bold small-text">Amount per serving</h2>
+                                    <p>Calories</p>
+                                </div>
+                                <span>230</span>
+                            </div>
+                            <div class="divider medium"></div>
+                            <div class="daily-value small-text">
+                                <p class="bold right no-divider">% Daily Value *</p>
+                                <div class="divider"></div>
+                                <p><span><span class="bold">Total Fat</span> 8g</span> <span class="bold">10%</span></p>
+                                <p class="indent no-divider">Saturated Fat 1g <span class="bold">5%</span></p>
+                                <div class="divider"></div>
+                                <p class="indent no-divider"><span><i>Trans</i> Fat 0g</span></p>
+                                <div class="divider"></div>
+                                <p><span><span class="bold">Cholesterol</span> 0mg</span> <span class="bold">0%</span></p>
+                                <p><span><span class="bold">Sodium</span> 160mg</span> <span class="bold">7%</span></p>
+                                <p><span><span class="bold">Total Carbohydrate</span> 37g</span> <span class="bold">13%</span></p>
+                                <p class="indent no-divider">Dietary Fiber 4g</p>
+                                <div class="divider"></div>
+                                <p class="indent no-divider">Total Sugars 12g</p>
+                                <div class="divider double-indent"></div>
+                                <p class="double-indent no-divider">Includes 10g Added Sugars <span class="bold">20%</span></p>
+                                <div class="divider"></div>
+                                <p class="no-divider"><span><span class="bold">Protein</span> 3g</span></p>
+                                <div class="divider large"></div>
+                                <p>Vitamin D 2mcg <span>10%</span></p>
+                                <p>Calcium 260mg <span>20%</span></p>
+                                <p>Iron 8mg <span>45%</span></p>
+                                <p class="no-divider">Potassium 235mg <span>6%</span></p>
+                            </div>
+                            <div class="divider medium"></div>
+                            <p class="note">
+                                * The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily
+                                diet. 2,000 calories a day is used for general nutrition advice.
+                            </p>
+                        </div>
+                        </section>
+                </div>
+                <div class="window-project">
+                    <section class="markers">
+                        <h1>CSS Color Markers</h1>
+                        <div class="container">
+                            <div class="marker red">
+                                <div class="cap"></div>
+                                <div class="sleeve"></div>
+                            </div>
+                            <div class="marker green">
+                                <div class="cap"></div>
+                                <div class="sleeve"></div>
+                            </div>
+                            <div class="marker blue">
+                                <div class="cap"></div>
+                                <div class="sleeve"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="window-project">
+                    <section class="cat-gallery">
+                        <header class="header">
+                            <h1>css flexbox photo gallery</h1>
+                        </header>
+                        <div class="gallery">
+                            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" alt="cat-eyesclosed">
+                            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg" alt="cat-layingupwards">
+                            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg" alt="cat-side">
+                            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg" alt="cat-bed">
+                            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg" alt="cat-white">
+                            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg" alt="cat-two">
+                            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg" alt="cat-couch">
+                            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg" alt="cat-orange">
+                            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg" alt="cat-white-black">
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <div class="thanking">
+                <div>
+                    <p>All of my projects were possible thanks to<p>
+                        <a href="https://www.freecodecamp.org/learn">freeCodeCamp</a>
+                    <p><i>I hope we can work together</i></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
