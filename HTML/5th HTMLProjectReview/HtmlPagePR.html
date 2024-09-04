@@ -1,10 +1,41 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="StyleSheetPR.css" />
 </head>
 <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a test survey made by Carlos Loya</p>
+    <fieldset>
+        <form id="survey-form">
+            <label for="name-label" id="name-label"><p>Name: </p><input id="name" name="survey-form" type="text" required placeholder="Please input your name" /></label>
+            <label for="email-label" id="email-label"><p>Email: </p><input id="email" name="survey-form" type="email" required placeholder="example@domain.com" /></label>
+            <label for="number-label" id="number-label"><p>Age: </p><input id="number" name="survey-form" type="number" pattern="[0-9]" min="0" max="120" placeholder="max 120" /></label>
+            <label for="dropdown">
+                <p>What Country from North America are you from?</p>
+                <select id="dropdown" name="survey-form">
+                    <option value="">(select one)</option>
+                    <option value="1">Canada</option>
+                    <option value="2">United States</option>
+                    <option value="3">Mexico</option>
+                </select>
+            </label>
+            <p>Have you travelled in the last 3 months?</p>
+            <label for="yes-button">Yes<input type="radio" name="travel-button" class="inline" value="yes" checked /></label>
+            <label for="no-button">No<input type="radio" name="travel-button" class="inline" value="no" /></label>
+            <p>What countries of North America have you travelled or lived in?(Select all aplicable)</p>
+            <label for="Canada">Canada <input class="inline" id="Canada" type="checkbox" required name="survey-form" value="Canada" checked /> </label>
+            <label for="USA">United States <input class="inline" id="USA" type="checkbox" required name="survey-form" value="USA" /> </label>
+            <label for="Mexico">Mexico <input class="inline" id="Mexico" type="checkbox" required name="survey-form" value="Mexico" /> </label>
+            <label for="comments">
+                <p>Comments:</p>
+                <textarea id="comments" name="comments" rows="8" cols="50" placeholder="Feel free to provide constructive criticism or any kind of comments..."></textarea>
+            </label>
+            <input type="submit" value="Submit" id="submit" name="survey-form" />
 
+        </form>
+    </fieldset>
 </body>
 </html>
